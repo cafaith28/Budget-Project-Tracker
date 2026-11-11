@@ -12,7 +12,7 @@ set_site_information(
     description = "Track construction material expenses against a project budget.",
     sources = "Drafter documentaion and assistance from ChatGPT (see AI transcripts in repository)",
     planning = "See brainstorm/ and design/ folders in GitHub repository.",
-    links = ["https://cafaith28.github.io/Project-Budget-Tracker/"],
+    links = ["https://cafaith28.github.io/Budget-Project-Tracker/"],
     )
 
 @dataclass
