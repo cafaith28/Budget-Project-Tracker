@@ -135,10 +135,9 @@ def dashboard(state: State)-> Page:
     else:
         status = "UNDER BUDGET by " + money(remaining)
         
-    contents = [
-        Header("Project Dashboard")
-        ]
-    
+   
+    contents = []
+    contents.append(Header("Project Dashboard"))
     contents.extend(navigation())
     
     contents.append(Header(state.project_name, 2))
@@ -202,9 +201,8 @@ def add_material(state: State)-> Page:
     if state.project_name == "":
         return index(state)
     
-    contents = [
-        Header("Add Construction Material")
-        ]
+    contents = []
+    contents.append(Header("Add Construction Material"))
     
     contents.extend(navigation())
     
@@ -259,9 +257,8 @@ def edit_material(state: State, material_id: int)-> Page:
         state.message = "Material not found."
         return dashboard(state)
     
-    contents = [
-        Header("Edit Material")
-        ]
+    contents = []
+    contents.append(Header("Edit Material"))
     contents.extend(navigation())
     
     contents.append("Material Name:")
